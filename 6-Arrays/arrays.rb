@@ -79,7 +79,7 @@ print a, "\n"
 a = a.collect { |num| num**2}
 print a, "\n"
 
-#usando o delete_at para efetuar a exclusão de um item o array com base em sua posição
+# usando o delete_at para efetuar a exclusão de um item o array com base em sua posição
 a.delete_at(2)
 print a, "\n"
 
@@ -112,7 +112,7 @@ print teams[0], "\n"
 #comparando arrays
 puts teams[0] == teams[1]
 
-teams.each {|team| puts "segundo em cada time #{team[1]}"}
+teams.each { |team| puts "segundo em cada time #{team[1]}" }
 
 #each_index
 a = [1, 2, 3, 4, 5]
@@ -125,4 +125,5 @@ print a = [5, 3, 8, 2, 4, 1], "\n"
 print a.sort, "\n"
 
 #.product
-print [1, 2, 3].product([4, 5]), "\n"
+print [1, 2, 3].product([4, 5])
+print "\n"
