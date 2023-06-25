@@ -36,3 +36,43 @@ print shoes, "\n"
 # dessa mesma forma também podemos modificar valores de keys já existentes:
 shoes["summer"] = "flip-flops"
 print shoes, "\n"
+
+#podemos utilizar o delete para remover uma chave/valor do hash:
+shoes.delete("summer")
+print shoes, "\n"
+
+books = {
+  "Infinite Jest" => "David Foster Wallace",
+  "Into the Wild" => "Jon Krakauer"
+}
+
+#podemos utlizar a chamanda do hash com keys and values para chamar respectivamente os mesmos:
+print books.keys, "\n"
+print books.values, "\n"
+
+# Podemos juntar 2 hashs utilizando o .merge:
+hash1 = { "a" => 100, "b" => 200 }
+hash2 = { "b" => 254, "c" => 300 }
+
+print hash1.merge(hash2), "\n"
+# Porem nesse caso o valor do hash que estiver dentro do merge irá sobrescrever caso haja uma chave igual em ambos:
+
+# Podemos utilizar ambas as formas para construirmos um hash com símbolos e ambos construirão chaves como símbolos
+# 'Rocket' syntax
+american_cars = {
+  :chevrolet => "Corvette",
+  :ford => "Mustang",
+  :dodge => "Ram"
+}
+# 'Symbols' syntax
+japanese_cars = {
+  honda: "Accord",
+  toyota: "Corolla",
+  nissan: "Altima"
+}
+
+puts american_cars[:ford]
+puts japanese_cars[:honda]
+
+
+
